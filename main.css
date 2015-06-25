@@ -1,0 +1,97 @@
+body, html {
+	margin: 0;
+	padding: 0;
+}
+
+.outer {
+    display: table;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+}
+
+.middle {
+    display: table-cell;
+    vertical-align: middle;
+    margin: 0;
+}
+
+.inner {
+    margin-left: auto;
+    margin-right: auto; 
+    width: 450px;
+    margin-bottom: 150px;
+}
+
+.inner img {
+	width: 260px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 15px;
+}
+
+.button-left {
+	text-align: right;
+}
+
+.button-right {
+	text-align: left;
+}
+
+ul {
+	list-style-type: none;
+}
+
+li {
+	display: inline;
+	font-size: 9pt;
+	margin: 0 10px 0 10px;
+}
+
+.nav {
+	width: 100%;
+	position: absolute;
+	top: 0px;
+}
+
+.nav ul {
+	float: right;
+	margin: 10px 20px 0px 20px;
+}
+
+.footer {
+	width: 100%;
+	position: absolute;
+	bottom: 0px;
+	background-color: #f2f2f2;
+	border-top: 1px solid #e4e4e4;
+	}
+
+.footer ul{
+	margin: 0;
+	padding: 0;
+}
+
+#left {
+	float: left;
+	margin: 5px 0 7px 20px;
+}
+
+#right {
+	float: right;
+	margin: 5px 20px 7px 0;
+}
+
+A:link {
+	text-decoration: none; color: gray;}
+
+A:visited {
+	text-decoration: none}
+
+A:active {
+	text-decoration: underline; color: black;}
+
+A:hover {
+	text-decoration: underline; color: black;}
