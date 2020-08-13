@@ -1,37 +1,53 @@
-body, html {
-	margin: 0;
-	padding: 0;
+html {
+	height: 100%;
 }
-
-.outer {
-    display: table;
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    margin: 0;
+body {
+	height: 100%;
+	display: grid;
+	grid-template-columns: 25% 50% 25%;
+	grid-template-rows: 6% 88% 6%;
+	font-family: arial, sans-serif;
+	font-size: 13px;
 }
-
-.middle {
-    display: table-cell;
-    vertical-align: middle;
-    margin: 0;
+nav {
+	grid-area: 1 / 1 / 2 / 4;
 }
-
-.inner {
-    margin-left: auto;
-    margin-right: auto; 
-    width: 450px;
-    margin-bottom: 150px;
+nav ul {
+	float: right;
 }
-
-.inner img {
-	width: 260px;
-	display: block;
+main {
+	display: grid;
+	grid-area: 2 / 2 / 3 / 3;
+	justify-content: center;
+	align-content: start;
+	margin-top: 25%;
+}
+main img {
 	margin-left: auto;
 	margin-right: auto;
-	padding: 15px;
+	margin-bottom: 10px;
 }
-
+footer {
+	grid-area: 3 / 1 / 4 / 4;
+	background-color: #f2f2f2;
+	border-top: 1px solid #e4e4e4;
+	color: #5f6368;
+}
+.left {
+	float: left;
+}
+.right {
+	float: right;
+}
+ul {
+	list-style-type: none;
+	padding: 0px;
+}
+li {
+	display: inline;
+	margin-left: 10px;
+	margin-right: 10px;
+}
 .button-left {
 	text-align: right;
 }
@@ -39,53 +55,26 @@ body, html {
 .button-right {
 	text-align: left;
 }
-
-ul {
-	list-style-type: none;
-}
-
-li {
-	display: inline;
-	font-size: 9pt;
-	margin: 0 10px 0 10px;
-}
-
-.nav {
-	width: 100%;
-	position: absolute;
-	top: 0px;
-}
-
-.nav ul {
-	float: right;
-	margin: 10px 20px 0px 20px;
-}
-
-.footer {
-	width: 100%;
-	position: absolute;
-	bottom: 0px;
+input[type="submit"] {
 	background-color: #f2f2f2;
-	border-top: 1px solid #e4e4e4;
-	}
-
-.footer ul{
-	margin: 0;
-	padding: 0;
+	border: 1px solid #f2f2f2;
+	border-radius: 4px;
+	color: #5f6368;
+	padding: 8px 16px;
+	cursor: pointer;
 }
-
-#left {
-	float: left;
-	margin: 5px 0 7px 20px;
+input[type="text"] {
+	border-radius: 20px;
+	height: 35px;
+	border-color: #f2f2f2;
 }
-
-#right {
-	float: right;
-	margin: 5px 20px 7px 0;
+#submit {
+	background-color: #4683ea;
+	color: white;
+	font-weight: bolder;
 }
-
 A:link {
-	text-decoration: none; color: gray;}
+	text-decoration: none; color: #000;}
 
 A:visited {
 	text-decoration: none}

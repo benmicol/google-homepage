@@ -5,20 +5,22 @@
 	<link rel="stylesheet" href="main.css" type="text/css">
 </head>
 <body>
-	<div class="outer">		
-
-	<div class="middle">
-		<div class="nav">
-		<ul>
-			<li><a href="user.asp">Ben</a></li>
-			<li><a href="mail.asp">Gmail</a></li>
-			<li><a href="images.asp">Images</a></li>
-		</ul>
-		</div>
-	<div class="inner">
-		<img src="https://www.google.com/images/srpr/logo11w.png">
+	<nav>
+		<ul class="left">
+				<li><a href="advertising.asp">About</a></li>
+				<li><a href="business.asp">Store</a></li>
+			</ul>
+			<ul class="right">
+				<li><a href="privacy.asp">Gmail</a></li>
+				<li><a href="terms.asp">Images</a></li>
+				<li><a href="settings.asp">Grid</a></li>
+				<li><a href="settings.asp"><input id="submit" type="submit" value="Sign in"></a></li>
+			</ul>
+	</nav>
+	<main>
+		<img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Google Logo">
 		<form id="searchbox">
-			<table width="400" cellpadding="7px">
+			<table width="100%" cellpadding="10px">
 				<tr>
 					<td colspan="2">
 						<input type="text" size="60">
@@ -34,20 +36,18 @@
 				</tr>
 			</table>
 		</form>
-	</div>
-		<div class="footer">
-			<ul id="left">
+	</main>
+	<footer>
+			<ul class="left">
 				<li><a href="advertising.asp">Advertising</a></li>
 				<li><a href="business.asp">Business</a></li>
-				<li><a href="about.asp">About</a></li>
+				<li><a href="about.asp">How Search Works</a></li>
 			</ul>
-			<ul id="right">
+			<ul class="right">
 				<li><a href="privacy.asp">Privacy</a></li>
 				<li><a href="terms.asp">Terms</a></li>
 				<li><a href="settings.asp">Settings</a></li>
 			</ul>
-		</div>
-	</div>
-	</div>
+	</footer>
 </body>
 </html>
